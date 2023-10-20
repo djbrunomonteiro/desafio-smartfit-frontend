@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UnitSearchComponent } from './unit-search.component';
-import { LayoutModule } from 'src/app/layout/layout.module';
-
-
+import { FormComponent } from '../form/form.component';
 
 @NgModule({
   declarations: [
-    UnitSearchComponent
+    UnitSearchComponent,
+    FormComponent
   ],
   imports: [
     CommonModule,
+
   ]
 })
 export class UnitSearchModule { }

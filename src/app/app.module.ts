@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UnitSearchComponent } from './views/unit-search/unit-search.component';
 import { LayoutModule } from './layout/layout.module';
+import { UnitSearchModule } from './views/unit-search/unit-search.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { LayoutModule } from './layout/layout.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LayoutModule
+    LayoutModule,
+    UnitSearchModule
   ],
   providers: [],
   bootstrap: [AppComponent]

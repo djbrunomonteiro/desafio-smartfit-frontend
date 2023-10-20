@@ -1,0 +1,32 @@
+<div class="container-form p-4">
+    <div class="hour-container mb-4">
+        <span><img src="../../../assets/images/icon-hour.png" alt=""> Horário </span>
+    </div>
+    <div class="options-container">
+        <div class="opts-group">
+            <h5 class="pb-2 px-2">Qual período quer treinar?</h5>
+            <div *ngFor="let option of options; let i = index" class="option form-check d-flex justify-content-between align-items-center">
+                <div class="p-1">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" [id]="i">
+                    <label class="form-check-label">
+                      {{option.title}}
+                    </label>
+                </div>
+                <label >{{option.hours}}</label>
+            </div>
+        </div>
+    </div>
+    <div class="result-container d-flex justify-content-between align-items-center">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Exibir unidades fechadas
+            </label>
+        </div>
+        <p>Resultados encontrados: <b>0</b></p>
+    </div>
+    <div class="buttons-container d-flex justify-content-center align-items-center">
+        <button type="button">Encontrar unidade </button>
+        <button type="button">Limpar</button>
+    </div>
+</div>

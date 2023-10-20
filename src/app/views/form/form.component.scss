@@ -1,0 +1,46 @@
+.container-form{
+    border: 2px solid var(--light-grey-2);
+    border-bottom: 4px solid var(--light-grey-2);
+    border-radius: 5px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .hour-container{
+        img{
+            width: 25px;
+        }
+
+    }
+    .opts-group{
+        h5{
+            border-bottom: 1px solid var(--light-grey-2);
+
+        }
+        .option{
+            border-bottom: 1px solid var(--light-grey-2);
+
+        }
+        .option:hover{
+            cursor: pointer;
+            border-bottom: 1px solid var(--light-grey-1);;
+        }
+
+    }
+    .buttons-container{
+        button{
+            width: 230px;
+            margin: 10px;
+            padding: 5px 10px;
+            border: 1px solid var(--light-grey-2);
+            border-radius: 5px;
+            background-color: var(--white-1);
+            font-weight: 600;
+        }
+        button:first-child{
+            background-color: var(--yellow);
+        }
+
+    }
+
+}

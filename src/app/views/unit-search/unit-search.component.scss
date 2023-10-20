@@ -1,0 +1,11 @@
+.container{
+    min-height: 75vh;
+    .title{
+        width: 250px;
+        .line{
+            background-color: var(--black-1);
+            height: 7px;
+            width: 30%;
+        }
+    }
+}
