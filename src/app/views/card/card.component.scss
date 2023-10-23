@@ -1,0 +1,44 @@
+.card{
+    background-color: var(--light-grey-2);
+    min-height: 150px;
+    border-radius: 5px;
+
+    .header{
+        border-bottom: 2px solid var(--light-grey-1);
+        .title{
+            font-family: 'gotham-bold';
+        }
+        .address{
+            font-size: 0.9rem;
+        }
+        
+
+    }
+    .details{
+        display: block;
+
+        .icons{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            img{
+                width: 18%;
+            }
+
+        }
+
+        .schedules{
+            display: flex;
+            .details{
+                h5{
+                    font-family: 'gotham-bold';
+                    font-size: 1rem;
+                }
+                span{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+    }
+}
