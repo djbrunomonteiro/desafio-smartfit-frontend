@@ -1,4 +1,6 @@
 export interface IOptions{
     title: string,
-    hours: string
+    hour: string,
+    start: string,
+    end: string
 }

@@ -9,7 +9,7 @@
                 confira aqui se a sua unidade está aberta e as medidas de segurança que estamos seguindo.</p>
         </div>
         <div class="col-md-9 mt-4">
-            <app-form></app-form>
+            <app-form (formSearch)="state.setFilterData($event)"></app-form>
             <app-legend></app-legend>
         </div>
         <div class="col-md-9 my-2">

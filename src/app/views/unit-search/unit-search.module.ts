@@ -4,6 +4,7 @@ import { UnitSearchComponent } from './unit-search.component';
 import { FormComponent } from '../form/form.component';
 import { LegendComponent } from '../legend/legend.component';
 import { CardComponent } from '../card/card.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { CardComponent } from '../card/card.component';
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule
 
   ]
 })
