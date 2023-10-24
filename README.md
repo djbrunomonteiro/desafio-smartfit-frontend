@@ -1,27 +1,52 @@
-# DesafioSmartfit
+# Desafio Smartfit Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+Link do desafio : https://github.com/bioritmo/front-end-code-challenge-smartsite
 
-## Development server
+*projeto em Angular@16*
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Disclaimer
 
-## Code scaffolding
+A ideia de realizar esse desafio veio após o video da Fernanda Kipper (https://www.youtube.com/watch?v=ozZXMkp8MnQ)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Não é um copy paste do projeto dela, usei minha forma de codificar.
 
-## Build
+Não participei do processo seletivo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Para Executar
 
-## Running unit tests
+* Clone:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```http 
+git clone https://github.com/djbrunomonteiro/desafio-smartfit-frontend.git
+```
 
-## Running end-to-end tests
+* Abra o projeto em seu editor
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* Instale as depedências
 
-## Further help
+```http
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* após é só servir
+
+```http
+ng serve
+```
+
+## ***Opcional***
+
+Execute e sirva o projeto através do docker-compose
+
+*suponha-se que já tem o docker instalado em seu sistema e a porta 80 esteja disponível*
+
+* Na pasta do projeto execute
+```http
+docker-compose up --build
+```
+
+* Se não houver error acesse:
+
+```http
+http://localhost:80
+```
