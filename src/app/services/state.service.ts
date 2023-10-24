@@ -27,10 +27,11 @@ export class StateService {
   }
 
   setFilterData(formFilter: IFormFilter){
-    const locations= this.data$.value ?? [];
-    const locations_schedules = locations.filter((location) =>  location?.schedules?.length );
-    const result = locations_schedules.filter(location => this.filterSchedules(formFilter, location?.schedules))
-    this.filterData$.next(result)
+    if(!formFilter.hour){return;}
+      const locations= this.data$.value ?? [];
+      const locations_schedules = locations.filter((location) =>  location?.schedules?.length );
+      const result = locations_schedules.filter(location => this.filterSchedules(formFilter, location?.schedules))
+      this.filterData$.next(result)
   }
 
   clearFilter(){

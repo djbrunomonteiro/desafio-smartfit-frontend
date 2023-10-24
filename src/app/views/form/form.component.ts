@@ -14,7 +14,7 @@ export class FormComponent implements OnInit {
 
   form = this.formBuilder.group({
     hour: ['', [Validators.required]],
-    opened: [false],
+    opened: [true],
     day: [new Date().getDay()]
   })
 
@@ -42,6 +42,7 @@ export class FormComponent implements OnInit {
 
   ngOnInit(): void {
     this.state.getFilterData().subscribe(res => this.total = res.length);
+    this.search()
   }
 
   search(){
