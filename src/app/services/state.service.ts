@@ -28,6 +28,10 @@ export class StateService {
     this.filterData$.next(result)
   }
 
+  clearFilter(){
+    this.filterData$.next([]);
+  }
+
   checkFilter(formFilter: IFormFilter, schedules?: ISchedules[]){
     if(!schedules){return false;};
     const form_filter_hours = this.extractHours(formFilter.hour);

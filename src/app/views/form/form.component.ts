@@ -48,4 +48,9 @@ export class FormComponent implements OnInit {
     this.formSearch.emit(this.form.value)
   }
 
+  clear(){
+    this.form.patchValue({hour: '', opened: false});
+    this.state.clearFilter();
+  }
+
 }
