@@ -18,13 +18,12 @@ export class UnitSearchComponent implements OnInit {
   ){}
 
   ngOnInit(): void {
-    this.getUnits();   
+    this.getUnits(); 
+    this.state.getFilterData()  
   }
 
   getUnits(){
     this.core.getAll().subscribe(res =>{
-      console.log(res);
-      
       if(res?.status === 200){this.state.setData(res?.locations)}
     })
   }
