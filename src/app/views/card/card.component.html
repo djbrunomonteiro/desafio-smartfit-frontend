@@ -1,31 +1,27 @@
 <div class="card p-3">
     <div class="header mb-2">
-        <p class="status ">Aberto</p>
-        <h5 class="title">Vicente Linhares</h5>
-        <p class="address mb-1">
-            Av. Dom Severino, 1733 &#8211; Fátima<br>Teresina, PI
-        </p>
+        <ng-container *ngIf="location.opened; else closed">
+            <p class="opened"> Aberto</p>
+        </ng-container>
+        <ng-template #closed>
+            <p class="closed"> Fechada</p>
+        </ng-template>
+        
+        <h5 class="title">{{location.title}}</h5>
+        <div class="address mb-1" [innerHTML]="location.content"></div>
     </div>
     <div class="details">
         <div class="icons">
-            <img src="../../../assets/images/required-mask.png" alt="">
-            <img src="../../../assets/images/required-lockerroom.png" alt="">
-            <img src="../../../assets/images/required-towel.png" alt="">
-            <img src="../../../assets/images/required-mask.png" alt="">
+            <img [src]="'assets/images/'+location.mask+'-mask.png'">
+            <img [src]="'assets/images/'+location.locker_room+'-lockerroom.png'">
+            <img [src]="'assets/images/'+location.towel+'-towel.png'">
+            <img [src]="'assets/images/'+location.fountain+'-fountain.png'">
         </div>
         <div class="schedules my-3">
             <div class="row">
-                <div class="col-6 details my-2">
-                    <h5 class="m-0">Seg. à Sex.</h5>
-                    <span>06h às 22h</span>
-                </div>
-                <div class="col-6 details my-2">
-                    <h5 class="m-0">Seg. à Sex.</h5>
-                    <span>06h às 22h</span>
-                </div>
-                <div class="col-6 details my-2">
-                    <h5 class="m-0">Seg. à Sex.</h5>
-                    <span>06h às 22h</span>
+                <div *ngFor="let item of location?.schedules" class="col-6 details my-2">
+                    <h5 class="m-0">{{item?.weekdays}}</h5>
+                    <span>{{item?.hour}}</span>
                 </div>
             </div>
 

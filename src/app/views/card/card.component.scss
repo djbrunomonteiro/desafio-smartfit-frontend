@@ -1,15 +1,22 @@
 .card{
     background-color: var(--light-grey-2);
-    min-height: 150px;
+    height: 400px;
     border-radius: 5px;
 
     .header{
         border-bottom: 2px solid var(--light-grey-1);
+        .opened{
+            color: var(--green)
+        }
+        .closed{
+            color: var(--red)
+
+        }
         .title{
             font-family: 'gotham-bold';
         }
         .address{
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
         
 
